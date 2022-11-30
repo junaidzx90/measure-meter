@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="elWidgetTem2 widget">
+        <div class="circle_container">
+            <div class="contents">
+                <div class="contents_inner">
+                    <div class="_inner_child">
+                        <strong><span>25</span>°C</strong>
+                        <p>Celcius</p>
+                    </div>
+                </div>
+                <div class="temp2bottom"></div>
+            </div>
+            <div class="progress">
+                <svg class="circle-container" viewBox="-1 -7.5 92 80" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="gradient" x1="120%" y1="0%" x2="0%" y2="120%">
+                        <stop class="stop1" offset="30%"></stop>
+                        <stop class="stop2" offset="100%"></stop>
+                    </linearGradient>
+
+                    <path id="progress" class="range-progress" d="M16,58a35,35 0 1,1 58,0" stroke="url(#gradient)"
+                        pathLength="100" fill="none" stroke-linecap="round" stroke-dasharray="30 101"></path>
+                    <circle class="dot" id="dot" cx="0" cy="0" r="2" stroke="#ffffff" stroke-width="2"
+                        fill="transparent" transform="translate(18.336103439331055,15.726995468139648)"></circle>
+                </svg>
+            </div>
+            <div class="range-slider">
+                <input class="meter tempmeter" id="meter" type="range" name="tempRange" min="0"
+                    max="100" step="5" value="25">
+            </div>
+        </div>
+    </div>
+
+    <script src="js-range.js"></script>
+</body>
+
+</html>
